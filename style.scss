@@ -47,7 +47,9 @@ $fs-900: 250px;
     font-family: 'Meticula', sans-serif;
     font-weight: $fw-light;
 }
-
+.clr-primary-200 {
+    color: $clr-primary-200;
+}
 
 //Mixin
 @mixin font-style($family, $weight, $size, $color) {
@@ -263,6 +265,7 @@ svg {
             @include font-style($ff-primary, $fw-bold, clamp(1.2rem, 2vw, 2.5rem), $clr-neutral-300);
             line-height: 2.5rem;
             margin-top: 3rem;
+            padding-right: 10rem;
         }
     }
 
@@ -789,6 +792,10 @@ svg {
         }
     
         .stacks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             .stacks-btn {
                 display: flex;
                 justify-content: center;
