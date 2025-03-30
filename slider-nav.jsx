@@ -21,14 +21,28 @@ const SliderNav = () => {
         return () => sections.forEach(section => observer.unobserve(section));
     }, []);
 
+    const handleNavClick = (e, id) => {
+        e.preventDefault(); // blocks URL changes
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div className="slider-nav">
-            <a href="#page-1" className={activeSection === "page-1" ? "active" : ""}></a>
-            <a href="#page-2" className={activeSection === "page-2" ? "active" : ""}></a>
-            <a href="#page-3" className={activeSection === "page-3" ? "active" : ""}></a>
+            <a
+                href="#page-1"
+                className={activeSection === "page-1" ? "active" : ""}
+                onClick={(e) => handleNavClick(e, "page-1")}
+            ></a>
+            <a
+                href="#page-2"
+                className={activeSection === "page-2" ? "active" : ""}
+                onClick={(e) => handleNavClick(e, "page-2")}
+            ></a>
         </div>
     );
 };
 
-// React rendering 
 ReactDOM.createRoot(document.getElementById("slider-nav-root")).render(<SliderNav />);
