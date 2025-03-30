@@ -787,17 +787,17 @@ svg {
   }
   .page-2 .projects-container {
     gap: 1rem;
-    margin-top: -4rem;
+    margin-top: -3rem;
   }
   .page-2 .projects-container .project {
-    gap: 1.5rem;
-    padding: 0.5rem 0.5rem 0 0.5rem;
+    gap: 0;
+    padding: 0.75rem 0.75rem 0 0.75rem;
     margin: 0 2rem;
   }
   .page-2 .projects-container .project h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
     text-align: center;
   }
@@ -820,7 +820,7 @@ svg {
   .page-2 .projects-container .project-2 h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: #fb3e5a;
   }
   .page-2 .projects-container .project-2 p {
